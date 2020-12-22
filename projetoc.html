@@ -1,7 +1,7 @@
 
 <!DOCTYPE HTML>
 <head>
-<link rel="stylesheet" href="Reservia.css">
+<link rel="stylesheet" href="projetoc.css">
 <script src="https://kit.fontawesome.com/d6f1339307.js" crossorigin="anonymous"></script>
 <title>Reservia - Trouvez votre hébergement pour des vacances de rêves</title>
 </head>
@@ -36,39 +36,42 @@
 </section>
 
 
-<!-- Section 2 search-section-->
-<section id="search-section">
-        
-<div class="barre-de-recherche">
-    <!-- Location icon before search bar-->
-    <input type="search" placeholder="Marseille, France" name="location-search">
-    <button class="rechercher"><span>Rechercher</span></button>
-</div>
-</section>
+<!-- filters bar-->
+<section id="filters-display">
+    <h3 class=title-filtre>Filtres</h3>         
 
-<!-- Section 3 filtres-->
-<section id="Filtres">
-<h3>Filtres</h3>
-
-    <div class="filters-bar">
-        <!-- Economique-->
-        <button class="bouton-filtres">
-            <span>Economique</span></button>
-        
-        <!-- Famille-->
-        <button class="bouton-filtres">
-            <span>Familial</span></button>
+        <div class="filters-bar">
+            <!-- dollar icon-->
+            <button class="filtre-button">
+                <span class="circle-icon-filter">
+                <i class="fas fa-money-bill-wave fa-lg icon-filter"></i>
+                </span>
+                <span>Economique</span></button>
+            
+            <!-- family icon-->
+            <button class="filtre-button">
+                <span class="circle-icon-filter">
+                <i class="fas fa-child fa-lg icon-filter"></i>
+                </span>
+                <span>Familial</span></button>
 
 
-        <!-- Romantique-->
-        <button class="bouton-filtres">
-            <span>Romantique</span></button>
+            <!-- heart icon-->
+            <button class="filtre-button">
+                <span class="circle-icon-filter">
+                <i class="fas fa-heart fa-lg icon-filter"></i>
+                </span>
+                <span>Romantique</span></button>
 
 
-        <!-- Animaux-->
-        <button class="bouton-filtres">
-            <span>Animaux autorisés</span></button>
-    </div>
+            <!-- dog icon-->
+
+            <button class="filtre-button">
+                <span class="circle-icon-filter">
+                <i class="fas fa-dog fa-lg icon-filter"></i>
+                </span>
+                <span>Animaux autorisés</span></button>
+        </div>
 </section>
 
 <!-- Section 4 Infos-->
@@ -185,75 +188,16 @@
 
             <p id="more">Afficher plus</p>
 
-    </section>
+    
 
+        <h3>Les plus populaires</h3>
+            <div id="grid3">
 
-   <!-- Section 6 Les plus populaires -->
-   <section id="les_plus_populaires"
-class="les_plus_populaires">
-<aside class="populaire">
-    <div>
-            <h2 class="populaire_titre">Les plus populaires</h2>
-
-
-            <div>
-
-<!-- Populaire 1 -->
-                <a class="hotel_populaire">
-                    <div class="contour-populaire">
-                        <img src="images/hebergements/4_small/hotel-le-soleil-du-matin.jpg" 
-                        alt="hotel le solei du matin" class="image-populaire">
-                    </div>
-                    <div class="body-populaire">
-                        <div class="div">                                    
-                            <h3 class="populaire-titre">Hôtel le soleil du matin</h3>
-                            <p class="populaire-texte">Nuit a partir de <strong>128€</strong> 
-                            </p>
-                        </div>
-                        <div class="etoiles">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </a>
-
-<!-- Populaire 2 -->
-                <a class="hotel_populaire">
-                    <div class="contour-populaire">
-                        <img src="images/hebergements/4_small/au-coeur-de-leau-chambre-dhotes.jpg" 
-                        alt="au-coeur-de-leau-chambre-dhotes" class="image-populaire">
-                    </div>
-                    <div class="body-populaire">
-                        <div class="div">                                    
-                            <h3 class="populaire-titre">Au coeur de l'eau Chambres d'hôtes</h3>
-                            <p class="populaire-texte">Nuit a partir de <strong>71€</strong> 
-                            </p>
-                        </div>
-                        <div class="etoiles">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </a>
-
-<!-- Populaire 3 -->
-                <a class="hotel_populaire">
-                    <div class="contour-populaire">
-                        <img src="images/hebergements/4_small/hotel-tout-bleu-et-blanc.jpg" 
-                        alt="hotel-tout-bleu-et-blanc" class="image-populaire">
-                    </div>
-                    <div class="body-populaire">
-                        <div class="div">                                    
-                            <h3 class="populaire-titre">Hôtel tout bleu et Blanc</h3>
-                            <p class="populaire-texte">Nuit a partir de <strong>68€</strong> 
-                            </p>
-                        </div>
+                <article class="populaires"><a href="">
+                    <img alt="hotel-le-soleil-du-matin" src="images/hebergements/4_small/hotel-le-soleil-du-matin.jpg">
+                    <div class="populaires-texte">
+                        <h4>Hotel le soleil du matin</h4>
+                        <p>Nuit à partir de <strong>128€</strong></p>
                         <div>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -261,12 +205,38 @@ class="les_plus_populaires">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star gris"></i>
                         </div>
-                    </div>
-                </a>
+                                                    </div>
+                </a></article>
+                <article class="hotels"><a href="">
+                    <img alt="au-coeur-de-leau-chambre-dhotes" src="images/hebergements/4_small/au-coeur-de-leau-chambre-dhotes.jpg">
+                    <div class="hotels-texte">
+                        <h4>Au coeur de l'eau Chambre d'hotes</h4>
+                        <p>Nuit à partir de <strong>71€</strong></p>
+                        <div>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star gris"></i>
+                        </div>
+                                                    </div>
+                </a></article>
+                <article class="hotels"><a href="">
+                    <img alt="hotel-tout-bleu-et-blanc" src="images/hebergements/4_small/hotel-tout-bleu-et-blanc.jpg">
+                    <div class="hotels-texte">
+                        <h4>Hotel tout bleu et blanc</h4>
+                        <p>Nuit à partir de <strong>68€</strong></p>
+                        <div>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star gris"></i>
+                        </div>
+                                                    </div>
+                </a></article>
             </div>
-</aside>
-   </section>
-
+        </section>
 
    <!-- Section 7 Activites -->
 <section id="activites" class="activites__list">
@@ -288,7 +258,7 @@ class="les_plus_populaires">
             <h3 class="activite__title">Fort de Pomégues</h3>
         </a>
 
-        <a class="activite activite3 mt-2">
+        <a class="activite activite3">
             <div>
          <img src="images/activites/4_small/iles-du-frioul.jpg" 
          alt="iles-du-frioul" class="image-activites">
@@ -309,7 +279,7 @@ class="les_plus_populaires">
             </div>
             <h3 class="activite__title">Note-Dame-De-La-Garde</h3>
         </a>
-        <a class="activite activite6 mt-2">
+        <a class="activite activite6">
             <div>
         <img src="images/activites/4_small/parc-longchamp.jpg" 
          alt="parc-longchamp" class="image-activites">
