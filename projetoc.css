@@ -84,6 +84,63 @@ header nav li {
     font-weight: 700;
 }
 
+.search {
+    marge inférieure: 15px;
+    affichage: flex;
+    justify-content: flex-start;
+}
+.search .group__input {
+      affichage: flex;
+      justify-content: centre;
+      align-items: centre;
+}
+.search .group__input span {
+        affichage: bloc en ligne;
+        couleur de fond: # F2F2F2;
+        hauteur: 36px;
+        rembourrage: 0 10px;
+        hauteur de ligne: 36px;
+        rayon de la bordure: 8px 0 0 8px;
+}
+.search .group__input input {
+  hauteur: 90%;
+  rayon de la frontière: 0;
+  padding-left: 5px;
+  bordure: 1px solide # F2F2F2;
+  poids de la police: 600;
+}
+.search .group__input input :: placeholder {
+  taille de la police: 14px;
+  poids de la police: gras;
+  couleur: # 000;
+
+/ * ---------------------------------------------
+    ------------------- LES FILTRES ------------------
+    ----------------------------------------------- * /
+    
+    # filters-display {
+        padding-left: 19px;
+        padding-right: 19px;
+
+    }
+
+    .filters-bar {
+        flex-wrap: enveloppement;
+        justify-content: flex-start;
+        largeur: 100%;
+    }
+
+    # filters-display button {
+        marge inférieure: 25px;
+        hauteur: 61px;
+        marge droite: 40px;
+    }
+
+    .circle-icon-filter {
+        hauteur: 61px;
+        largeur: 61px;
+    }
+
 
 / ----- TOUS LES HEBERGEMENTS ------ /
 
@@ -133,16 +190,6 @@ header nav li {
     line-height: 3px;
 }
 
-/*-----ETOILES------*/
-
-.fa-star{
-    color: #0065FC;
-}
-
-.gris{
-    color:lightgrey;
-}
-
 /*-----ENCADREMENT DES IMAGES------*/
 
 .hotels img{
@@ -156,10 +203,126 @@ header nav li {
     height: 145px;
 
 }
+
+/*-----LOGEMENTS POPULAIRES------*/
+
+#grid6{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 600px;
+    padding: 10px 19px;
+
+}
+
+/*-----LISTE DES HOTELS POPULAIRES------*/
+
+.populaires{
+    
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: black;
+    height: 45%;
+    width: 30%;
+    background-color: white;
+    border-radius: 30px;
+    border: 8px solid white;
+
+    transition: transform .2s;
+    box-shadow: 0px 0px 10px 4px rgba(232, 225, 225, 0.75)
+}
+
+
+.populaires-texte{
+    margin: -8px 5px 10px 9px;
+    line-height: 3px;
+}
+
+/*-----ENCADREMENT DES IMAGES POPULAIRES------*/
+
+.populaires img{
+    padding: 0px 0px 0px 0px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    object-position: 0 50%;
+    width: 100%;
+    height: 145px;
+
+}
+/*-----ACTIVITES------*/
+
+/*-----LISTE DES ACTIVITES------*/
+
+.activite{
+    
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: black;
+    height: 45%;
+    width: 30%;
+    background-color: white;
+    border-radius: 30px;
+    border: 8px solid white;
+
+    transition: transform .2s;
+    box-shadow: 0px 0px 10px 4px rgba(232, 225, 225, 0.75)
+}
+
+
+.activites-texte{
+    margin: -8px 5px 10px 9px;
+    line-height: 3px;
+}
+
+.activites img{
+    padding: 0px 0px 0px 0px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    object-position: 0 50%;
+    width: 100%;
+    height: 145px;
+
+}
+/*-----ETOILES------*/
+
+.fa-star{
+    color: #0065FC;
+}
+
+.gris{
+    color:lightgrey;
+}
+
+
 /*-----AFFICHER PLUS------*/
 #more{
     padding: 5px 0px 0px 45px;
     margin: 0px 0px 25px 0px;
     font-weight: 800;
     font-size: 1.2rem;
+}
+
+.circle-icon-filter{
+color:#0065FC;
+background-color:red;
+width: 500px;
+height: 500px;
+border-radius : 50%;
+padding : 10px;
+}
+
+.footer.encadrement_footer
+{
+    display: flex;
+}
+
+#conteneur
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
